@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Player</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 flex flex-col items-center justify-center min-h-screen p-4">
+
+  <div class="bg-white rounded-2xl shadow-lg max-w-2xl w-full overflow-hidden">
+    <!-- Video Player -->
+    <div class="w-full aspect-video bg-black">
+      <video id="videoPlayer" class="w-full h-full" controls>
+        <source src="https://canastaplus.com/v/01_canasta.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Video Info -->
+    <div class="p-6 space-y-3">
+      <h1 class="text-2xl font-bold">Canasta game with 2 players</h1>
+      <p class="text-gray-600">Player A creates a new Canasta table. Player B requests to join the table. Host player A
+        accepts request and starts the game. Players take a couple turns and use the Table Chat. Player B abandons.</p>
+      <div class="text-sm text-gray-500">Duration: <span id="videoDuration">02:15</span></div>
+    </div>
+  </div>
+
+  <hr style="margin: 1em;">
+
+  <div class="bg-white rounded-2xl shadow-lg max-w-2xl w-full overflow-hidden">
+    <!-- Video Player -->
+    <div class="w-full aspect-video bg-black">
+      <video id="videoPlayer" class="w-full h-full" controls>
+        <source src="https://canastaplus.com/v/02_spades.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Video Info -->
+    <div class="p-6 space-y-3">
+      <h1 class="text-2xl font-bold">Spades game with 2 players</h1>
+      <p class="text-gray-600">A new Spades table is started. Players go through the bidding phase and start playing the
+        game.</p>
+      <div class="text-sm text-gray-500">Duration: <span id="videoDuration">01:13</span></div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
